@@ -1,0 +1,118 @@
+Metadata-Version: 1.1
+Name: torrentDownloader
+Version: 0.0.1
+Summary: To automate process of downloading TV Shows
+Home-page: https://github.com/tejaspandey1992/torrentDownloader
+Author: Tejas Pandey
+Author-email: tejaspandey2010@gmail.com
+License: BSD
+Download-URL: https://github.com/tejaspandey1992/torrentDownloader/tarball/0.0.1
+Description: torrentDownloader
+        ===============================
+        
+        version number: 0.0.1
+        author: Tejas Pandey
+        
+        Overview
+        --------
+        
+        To automate process of downloading TV Shows
+        
+        Installation / Usage
+        --------------------
+        
+        Pre-Install
+        -----------
+        1)Run command crontab -e and select nano as a editor , this will happen only when crontab is never has been used 
+          in the system.
+        
+        
+        Install
+        -----------
+        1)Extract the package-archive
+        2)Go to install folder and copy all the files and paste it where package-archive is present
+          These scripts and package-archive must be in same folder .
+        3)Follow the command excatly without trying to become super using su 
+        4)sudo ./install.sh
+        5)./cron.sh
+        6)sudo ./trans.h
+        
+        A folder will be created in Downloads folder with name "torrent" , this is where
+        all torrents will be downloaded.
+        
+            
+        Issues
+        ------------
+        1)It is possible transmission-daemon does not starts properly
+          Then we should try to use following command
+          sudo service transmission-daemon start
+          sudo service transmission-daemon stop
+        
+        2)Log of the command running will be present at the 'log' file at the Desktop 
+        
+        Example
+        -------
+        
+        1)To see the help and commands available
+        
+        tc --help
+        
+        2)To addshow to the currently watching
+        
+        tc addshow
+        
+        At a time only one season of a show can be downloaded . It will increment 
+        the episode number once season is completely downloaded it will be removed.
+        
+        3)Graphical user interface is also available for transmission-daemon
+          Default address - http://127.0.0.1:9091/
+          Username- transmission
+          Password- transmission
+        
+        4) tc lt
+          List all the torrent that are currently running in the system
+        
+        5)tc generalsearch
+          To add torrent without adding to the list of currently watching show.
+        
+        6)tc aftercare
+          To remove completed torrent without deleting the data.
+        
+        
+        Configuration
+        ----------------
+        
+        Config.yaml
+        -----------
+        Location :- /usr/local/lib/python2.7/dist-packages/torrentDownloader/config.yaml
+        
+        baseUrl: https://kat.cr
+        
+        Since there is possibility of kat.cr changes its domain , user can configure it form here .
+        
+        scrapDepth : 10
+        Higher the number it will search for more pages for the torrent. In most cases does not require 
+        to change.
+        
+        quality : High
+        By default it is set to High , can be changed to Low , for saving data or space.
+        Valid values are - High or Low (case sensitive)
+        
+        
+        crontab -e 
+        -----------
+        */30 * * * *  /usr/bin/python /usr/local/lib/python2.7/dist-packages/torrentDownloader/background.py >> /home/tejas/Desktop/log
+        
+        Not exactly this entry will differ from system to system.
+        
+        */30 - Tells about the minutes at which scrapping and maintaince routine should run
+        
+        This time can be changed depending upon the need by defualt it is 5 minutes , can be changed depending upon need
+        
+        
+         
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3

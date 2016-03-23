@@ -1,0 +1,6 @@
+pypi-publisher
+pyyaml
+simplejson
+bs4
+Click
+requests==2.2.1
