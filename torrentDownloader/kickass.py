@@ -142,14 +142,17 @@ class Kickass:
             if found:
                 self.getTorrentPage(value)
                 self.torrentFound=True
-                availabeTorrent.append([value,self.getTorrentSize(value)])
+                availabeTorrent.append([value,self.getTorrentSize(value),self.getMagnetLink(value)])
         availabeTorrent.sort(key=lambda x:float(x[1]))
+        print availabeTorrent
+        print self.quality
         if self.torrentFound:
                 if self.quality=='High':
-                        Transmission().addTorrent(self.getMagnetLink(availabeTorrent[-1][0]))
+                        print 'Using High'
+                        Transmission().addTorrent(availabeTorrent[-1][2])
                 else:
-                        Transmission().addTorrent(self.getMagnetLink(availabeTorrent[0][0]))
-
+                        print 'Using low'
+                        Transmission().addTorrent(availabeTorrent[0][2])
 
     def addRecord(self):
         with open(self.basePath + 'record.txt','r') as f:
