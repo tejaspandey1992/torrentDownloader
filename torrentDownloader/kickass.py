@@ -218,7 +218,7 @@ class Kickass:
             for x in soup.findAll('a',{'class':'cellMainLink'}):
                     jsonData[x.string]=x['href']
             print 'End of Page',i
-            with open('data.txt', 'w') as outfile:
+            with open(self.basePath + 'data.txt', 'w') as outfile:
                     simplejson.dump(jsonData, outfile, sort_keys = True, indent = 4,
                         ensure_ascii=False)
             sleep(5)
