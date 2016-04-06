@@ -151,7 +151,7 @@ class Kickass:
                         print 'Using High'
                         Transmission().addTorrent(availabeTorrent[-1][2])
                 else:
-                        print 'Using low'
+                        print 'Using Low'
                         Transmission().addTorrent(availabeTorrent[0][2])
 
     def addRecord(self):
