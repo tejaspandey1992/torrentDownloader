@@ -25,7 +25,7 @@ Install
 3)Follow the command excatly without trying to become super using su    
 4)sudo ./install.sh   
 5)./cron.sh   
-6)sudo ./trans.h   
+6)sudo ./trans.sh   
   
 A folder will be created in Downloads folder with name "torrent" , this is where  all torrents will be downloaded.   
 
