@@ -1,8 +1,8 @@
 torrentDownloader
 ===============================
 
-version number: 0.0.1
-author: Tejas Pandey
+Version Number: 1.0  
+Author: Tejas Pandey
 
 Overview
 --------
@@ -20,9 +20,8 @@ Pre-Install
 
 Install
 -----------
-1)Extract the package-archive   
-2)Go to install folder and copy all the files and paste it where package-archive is present   
-  These scripts and package-archive must be in same folder .   
+1)Extract the Source code (tar.gz) from Release.   
+2)Go to install folder and copy all the files and paste it where Source code (tar.gz)  is present   These scripts and Source code (tar.gz) must be in same folder .   
 3)Follow the command excatly without trying to become super using su    
 4)sudo ./install.sh   
 5)./cron.sh   
@@ -101,3 +100,4 @@ This time can be changed depending upon the need by defualt it is 5 minutes , ca
 
 
  
+
