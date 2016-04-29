@@ -34,8 +34,8 @@ class Transmission:
             x=x.split()
             if len(x) >= 9 and x[1]=='100%'  :
                 self.removeTorrent(int(x[0]))
-                cmd='/usr/bin/notify-send Download-Complete -t 20 \"%s\"' %(x[-1])
+                notify=u''
+                for i in range(9,len(x)):
+                    notifiy+=(x[i] + ' ')
+                cmd='/usr/bin/notify-send Download-Complete -t 20 \"%s\"' %(notify)
                 executeCommand(cmd)
-
-
-
