@@ -7,7 +7,7 @@
 # Distributed under terms of the BSD license.
 
 
-from helper import  executeCommand
+from helper import  executeCommand,sendEmail
 import click
 class Transmission:
 
@@ -39,3 +39,4 @@ class Transmission:
                     notifiy+=(x[i] + ' ')
                 cmd='/usr/bin/notify-send Download-Complete -t 20 \"%s\"' %(notify)
                 executeCommand(cmd)
+                sendEmail('Download Complete of ' + notify)
