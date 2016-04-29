@@ -29,8 +29,7 @@ class Transmission:
 
 
     def removeCompletedTorrent(self):
-        curStatus=str(self.listTorrent())
-        curStatus=curStatus.split('\n')
+        curStatus=self.listTorrent().split(u'\n')
         for x in curStatus:
             x=x.split()
             if len(x) >= 9 and x[1]=='100%'  :
