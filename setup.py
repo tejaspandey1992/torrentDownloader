@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '0.0.1'
+__version__ = '1.0'
 
 here = path.abspath(path.dirname(__file__))
 
@@ -26,9 +26,9 @@ setup(
     download_url='https://github.com/tejaspandey1992/torrentDownloader/tarball/' + __version__,
     license='BSD',
     classifiers=[
-      'Development Status :: 3 - Alpha',
+      'Development Status :: Stable',
       'Intended Audience :: Developers',
-      'Programming Language :: Python :: 3',
+      'Programming Language :: Python :: 2',
     ],
     keywords='',
     packages=find_packages(exclude=['docs', 'tests*']),
