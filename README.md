@@ -18,14 +18,8 @@ Pre-Install
  - Run command `crontab -e` and select nano as a editor , this will happen only when crontab is never has been used 
   in the system.
   
- - Following steps to activate GMAIL API.
- - Use this [wizard](https://console.developers.google.com/start/api?id=gmail) to create or select a project in the Google Developers Console and automatically turn on the API. Click Continue, then Go to credentials. 
- - At the top of the page, select the OAuth consent screen tab. Select an Email address, enter a Product name if not already set, and click the Save button. 
- - Select the Credentials tab, click the Add credentials button and select OAuth 2.0 client ID. 
- - Select the application type Other, enter the name "Gmail API Quickstart", and click the Create button. 
- - Click OK to dismiss the resulting dialog.
- - Click the  (Download JSON) button to the right of the client ID.
- - Rename it to client_secret.json .
+ - Follow the **Step 1: Turn on the Gmail API** on [wizard](https://developers.google.com/gmail/api/quickstart/python) to activate Gmail.
+ 
  
 
 > Don't share client_secret.json to anyone . This will be used in later stages of installation.
@@ -51,8 +45,8 @@ Issues
 ------------
 
  - It is possible transmission-daemon does not starts properly   
-  Then we should try to use following command.   
-  `sudo service transmission-daemon start`  
+  Then we should try to use following command. 
+  `sudo service transmission-daemon start`
      `sudo service transmission-daemon stop`
 
 Example
@@ -114,7 +108,7 @@ Not exactly this entry will differ from system to system.
   
 ***/30** - Tells about the minutes at which scrapping and maintaince routine should run   
   
-This time can be changed depending upon the need by default it is 30 minutes , can be changed depending upon need  
+This time can be changed depending upon the need by default it is 30 minutes , can be changed depending upon need  .
 
 
  
