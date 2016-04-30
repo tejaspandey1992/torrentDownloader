@@ -7,7 +7,7 @@
 #
 mkdir /home/$USER/Downloads/torrent
 install="/usr/local/lib/python2.7/dist-packages/torrentDownloader"
-crontab -l | { cat; echo "*/5 * * * *  /usr/bin/python $install/background.py >> /home/$USER/Desktop/log 2>&1 "; } | crontab -
+crontab -l | { cat; echo "*/30 * * * *  /usr/bin/python $install/background.py >> /home/$USER/Desktop/log 2>&1 "; } | crontab -
 cwd=$(pwd)
 python $cwd/edit.py 
 
