@@ -4,4 +4,4 @@ quality: 'High'
 
 scrapDepth: 10
     
-sendEmail: 'example@gmail.com'
+emailId: 'example@gmail.com'
