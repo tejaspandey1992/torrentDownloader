@@ -51,9 +51,9 @@ Issues
 ------------
 
  - It is possible transmission-daemon does not starts properly   
-  Then we should try to use following command. 
-  ` sudo service transmission-daemon start   
-  sudo service transmission-daemon stop`
+  Then we should try to use following command.   
+  `sudo service transmission-daemon start`  
+     `sudo service transmission-daemon stop`
 
 Example
 ------------
@@ -74,14 +74,14 @@ Example
   **Password - transmission**
   
 
- - **tc lt** 
+ - **tc lt**   
    List all the torrent that are currently running in the system .
    
 
- - **tc generalsearch**
+ - **tc generalsearch**  
      To add torrent without adding to the list of currently watching   show.   
 
- - **tc aftercare**
+ - **tc aftercare**  
      To remove completed torrent without deleting the data.   
 
   
@@ -92,16 +92,16 @@ Config.yaml
 -----------------
 **Location :- /usr/local/lib/python2.7/dist-packages/torrentDownloader/config.yaml**   
 
- - **baseUrl: https://kat.cr**
+ - **baseUrl: https://kat.cr**  
    Since there is possibility of kat.cr changes its domain , user can configure it form here . 
    
- - **scrapDepth : 10**
+ - **scrapDepth : 10**  
  Higher the number it will search for more pages for the torrent. In most cases does not require to change.
  
- - **quality : 'High'**
+ - **quality : 'High'**  
   By default it is set to High , can be changed to Low , for saving data or space. Valid values are - High or Low (case sensitive)
   
- - **emailId: 'example@gmail.com'**
+ - **emailId: 'example@gmail.com'**  
   Set this to your gmail id to get the email when torrent download is complete.
 
 crontab -e 
@@ -115,4 +115,8 @@ Not exactly this entry will differ from system to system.
 ***/30** - Tells about the minutes at which scrapping and maintaince routine should run   
   
 This time can be changed depending upon the need by default it is 30 minutes , can be changed depending upon need  
+
+
+ 
+
 
