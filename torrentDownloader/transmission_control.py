@@ -36,7 +36,7 @@ class Transmission:
                 self.removeTorrent(int(x[0]))
                 notify=u''
                 for i in range(9,len(x)):
-                    notifiy+=(x[i] + ' ')
+                    notify+=(x[i] + ' ')
                 cmd='/usr/bin/notify-send Download-Complete -t 20 \"%s\"' %(notify)
                 executeCommand(cmd)
                 sendEmail('Download Complete of ' + notify)
