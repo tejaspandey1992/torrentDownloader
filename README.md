@@ -46,15 +46,15 @@ Install
  - `sudo chmod 777 /usr/local/lib/python2.7/dist-packages/torrentDownloader/client_secret.json`.
 
 > A folder will be created in Downloads folder with name "torrent" ,
-> this is where  all torrents will be downloaded.
+> this is where  all torrents will be downloaded.  
 > Log of the software running will be present at the **log** file at the **Desktop** 
 
 Issues
 ------------
 
  - It is possible transmission-daemon does not starts properly   
-  Then we should try to use following command. 
-  `sudo service transmission-daemon start`
+  Then we should try to use following command.   
+  `sudo service transmission-daemon start`  
      `sudo service transmission-daemon stop`
 
 Example
