@@ -8,6 +8,14 @@ Overview
 -------------
 
 To automate process of downloading TV Shows
+<p>
+<img src="screenshot/terminal.png" alt="List Torrent" width="600" height="400" />
+<img src="screenshot/addshow.png" alt="Adding Show" width="600" height="400"/> 
+<img src="screenshot/current_watching.png" width="600" height="400" alt="Current Watching" /> 
+<img src="screenshot/web.png" alt="Browser View" width="600" height="400" /> 
+<img src="screenshot/gmail.png" alt="Gmail Message"   width="304" height="500" /> 
+
+</p>
 
 Installation / Usage
 ---------------------------
@@ -106,11 +114,12 @@ crontab -e
   
 Not exactly this entry will differ from system to system.   
   
-***/30** - Tells about the minutes at which scrapping and maintaince routine should run   
+***/30** - Tells about the minutes at which scrapping and maintenance routine should run   
   
 This time can be changed depending upon the need by default it is 30 minutes , can be changed depending upon need  .
 
 
  
+
 
 
