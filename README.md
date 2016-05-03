@@ -1,7 +1,7 @@
 torrentDownloader
 ===============================
 
-Version Number: 1.0  
+Version Number: 2.0  
 Author: Tejas Pandey
 
 Overview

@@ -7,6 +7,11 @@ install/cron.sh
 install/edit.py
 install/install.sh
 install/trans.sh
+screenshot/addshow.png
+screenshot/current_watching.png
+screenshot/gmail.png
+screenshot/terminal.png
+screenshot/web.png
 torrentDownloader/__init__.py
 torrentDownloader/background.py
 torrentDownloader/config.yaml
