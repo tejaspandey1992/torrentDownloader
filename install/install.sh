@@ -7,7 +7,7 @@
 #
 
 install="/usr/local/lib/python2.7/dist-packages/torrentDownloader"
-#sudo apt-get update
+sudo apt-get update
 sudo apt-get -y install python-pip
 sudo apt-get -y install transmission-daemon
 #sudo apt-get -y install vim
