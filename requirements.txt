@@ -1,1 +1,1 @@
-pypi-publisherpyyamlsimplejsonbs4Clickrequests==2.2.1
+pypi-publisherpyyamlsimplejsonbs4Clickrequests==2.2.1ndg-httpsclient
