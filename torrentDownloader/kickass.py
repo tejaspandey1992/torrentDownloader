@@ -15,6 +15,7 @@ from helper import showSeasonAll,show
 from bs4 import BeautifulSoup
 from transmission_control import Transmission
 from time import sleep
+import certifi
 
 
 class Kickass:
@@ -208,7 +209,7 @@ class Kickass:
         for i in range(1,self.depth+1):
             try:
                 url=self.baseUrl+'/user/ettv/uploads'
-                r=requests.get(url,params={'page':i},verify = False)
+                r=requests.get(url,params={'page':i},verify = certifi.where())
             except requests.exceptions.Timeout:
                 print 'Timeout has occured'
             except requests.exceptions.RequestException as e:
